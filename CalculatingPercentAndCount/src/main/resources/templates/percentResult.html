@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" 
+          href="styles.css"  />
+</head>
+
+<body>
+<div class="place">
+	<h2>Result for percent</h2>
+	<div class="place-result">
+	<p>For Start Sum = : <span class="big-result" th:text=" ${percentResult.startSum}" ></span></p>
+    <p>and : <span class="big-result" th:text=" ${percentResult.count}" ></span><span> iterations</span></p>
+    <p>to get End Sum = : <span class="big-result" th:text=" ${percentResult.endSum}" ></span></p>
+    <p>need : <span class="big-result-end" th:text=" ${percentResult.percent}"></span><span> percent per iteration</span></p>
+    </div>
+    <p><a href="/parameterForm">Calculate number of operations</a></p>
+    <p><a href="/parameterFormPercent">Calculate percent</a></p>
+    <p><a href="/parameterFormEndSum">Calculate end sum</a></p>
+    </div>
+</body>
+</html>
